@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.task61app">
+
+    <application
+        android:allowBackup="true"
+        android:label="Personalized Learning"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.Task61">
+
+        <!-- Launcher Activity 必须显式 exported -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 其他没有 intent-filter 的 Activity 可以不写 exported，默认为 false -->
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".InterestsActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".TaskDetailActivity" />
+        <activity android:name=".ResultActivity" />
+
+    </application>
+</manifest>
+
