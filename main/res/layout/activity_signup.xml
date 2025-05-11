@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="@string/signup_title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryDarkBlue"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@drawable/ic_baseline_account_circle_48"
+            android:tint="@color/primaryBlue"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/etSignUsername"
+            android:hint="@string/hint_username"
+            android:backgroundTint="@color/primaryBlue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/primaryBlue"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etConfirmEmail"
+            android:hint="@string/hint_confirm_email"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@color/primaryBlue"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etSignPassword"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/primaryBlue"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:hint="@string/hint_confirm_password"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/primaryBlue"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:hint="@string/hint_phone"
+            android:inputType="phone"
+            android:backgroundTint="@color/primaryBlue"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnCreateAccount"
+            android:text="@string/btn_create_account"
+            android:background="@drawable/bg_button_green"
+            android:textAllCaps="false"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

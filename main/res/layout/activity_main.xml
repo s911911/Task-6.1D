@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/backgroundLight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:paddingTop="36dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 顶部欢迎语 -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:text="Hello, Jingwei"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryDarkBlue"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- 任务提醒 -->
+        <TextView
+            android:id="@+id/tvTasksDue"
+            android:text="You have 1 task due"
+            android:textSize="14sp"
+            android:textColor="@color/primaryDarkBlue"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- 任务卡片 -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_round"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <TextView
+                    android:text="@string/generated_by_ai"
+                    android:background="@color/buttonGreen"
+                    android:textColor="@color/white"
+                    android:padding="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvTaskTitle"
+                    android:text="Generated Task 1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvTaskDesc"
+                    android:text="Generate a quiz with 3 questions to test students on the provided topic.
+                    For each question, generate 4 options where only one of the options is correct.
+                    Format your response as follows:"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnStartTask"
+                    android:text="Start Task"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_button_green"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>
+
